@@ -1,0 +1,468 @@
+{
+  "generated_utc": "2026-06-24 04:10:58 UTC",
+  "model": "naive OI-based + volume-weighted proxy, 4 nearest expiries (SAMPLE DATA)",
+  "data_note": "CBOE OI is T-1. Volume view is a live activity proxy.",
+  "errors": [],
+  "tickers": {
+    "SPX": {
+      "spot": 6000.0,
+      "net_gex": -129600000.00000042,
+      "net_gex_billions": -0.13,
+      "regime": "NEGATIVE",
+      "gamma_flip": 6000.0,
+      "call_wall": 6120.0,
+      "put_wall": 5880.0,
+      "peak_gex_strike": 6120.0,
+      "zero_dte_expiry": "2026-06-26",
+      "net_gex_0dte_billions": -0.13,
+      "flip_0dte": 6000.0,
+      "call_wall_0dte": 6120.0,
+      "put_wall_0dte": 5880.0,
+      "vol_confidence": "live",
+      "total_volume": 84000,
+      "net_gex_vol_billions": 1.728,
+      "regime_vol": "POSITIVE",
+      "flip_vol": 6000.0,
+      "call_wall_vol": 6000.0,
+      "put_wall_vol": null,
+      "profile_vol": [
+        {
+          "strike": 5700.0,
+          "gex": 0.0
+        },
+        {
+          "strike": 5760.0,
+          "gex": 0.0
+        },
+        {
+          "strike": 5820.0,
+          "gex": 0.0
+        },
+        {
+          "strike": 5880.0,
+          "gex": 0.0
+        },
+        {
+          "strike": 5940.0,
+          "gex": 0.0
+        },
+        {
+          "strike": 6000.0,
+          "gex": 1.728
+        },
+        {
+          "strike": 6060.0,
+          "gex": 0.0
+        },
+        {
+          "strike": 6120.0,
+          "gex": 0.0
+        },
+        {
+          "strike": 6180.0,
+          "gex": 0.0
+        },
+        {
+          "strike": 6240.0,
+          "gex": 0.0
+        },
+        {
+          "strike": 6300.0,
+          "gex": 0.0
+        }
+      ],
+      "expiries_used": [
+        "2026-06-26"
+      ],
+      "profile": [
+        {
+          "strike": 5700.0,
+          "gex": -0.0432
+        },
+        {
+          "strike": 5760.0,
+          "gex": -0.0432
+        },
+        {
+          "strike": 5820.0,
+          "gex": -0.0432
+        },
+        {
+          "strike": 5880.0,
+          "gex": -0.9072
+        },
+        {
+          "strike": 5940.0,
+          "gex": -0.0432
+        },
+        {
+          "strike": 6000.0,
+          "gex": -0.0432
+        },
+        {
+          "strike": 6060.0,
+          "gex": -0.0432
+        },
+        {
+          "strike": 6120.0,
+          "gex": 1.1664
+        },
+        {
+          "strike": 6180.0,
+          "gex": -0.0432
+        },
+        {
+          "strike": 6240.0,
+          "gex": -0.0432
+        },
+        {
+          "strike": 6300.0,
+          "gex": -0.0432
+        }
+      ]
+    },
+    "SPY": {
+      "spot": 598.0,
+      "net_gex": -858249.6000000038,
+      "net_gex_billions": -0.001,
+      "regime": "NEGATIVE",
+      "gamma_flip": 603.76,
+      "call_wall": 603.98,
+      "put_wall": 592.02,
+      "peak_gex_strike": 603.98,
+      "zero_dte_expiry": "2026-06-26",
+      "net_gex_0dte_billions": -0.001,
+      "flip_0dte": 603.76,
+      "call_wall_0dte": 603.98,
+      "put_wall_0dte": 592.02,
+      "vol_confidence": "live",
+      "total_volume": 80000,
+      "net_gex_vol_billions": 0.017,
+      "regime_vol": "POSITIVE",
+      "flip_vol": 598.0,
+      "call_wall_vol": 598.0,
+      "put_wall_vol": null,
+      "profile_vol": [
+        {
+          "strike": 568.1,
+          "gex": 0.0
+        },
+        {
+          "strike": 574.08,
+          "gex": 0.0
+        },
+        {
+          "strike": 580.06,
+          "gex": 0.0
+        },
+        {
+          "strike": 586.04,
+          "gex": 0.0
+        },
+        {
+          "strike": 592.02,
+          "gex": 0.0
+        },
+        {
+          "strike": 598.0,
+          "gex": 0.0172
+        },
+        {
+          "strike": 603.98,
+          "gex": 0.0
+        },
+        {
+          "strike": 609.96,
+          "gex": 0.0
+        },
+        {
+          "strike": 615.94,
+          "gex": 0.0
+        },
+        {
+          "strike": 621.92,
+          "gex": 0.0
+        }
+      ],
+      "expiries_used": [
+        "2026-06-26"
+      ],
+      "profile": [
+        {
+          "strike": 568.1,
+          "gex": -0.0004
+        },
+        {
+          "strike": 574.08,
+          "gex": -0.0004
+        },
+        {
+          "strike": 580.06,
+          "gex": -0.0004
+        },
+        {
+          "strike": 586.04,
+          "gex": -0.0004
+        },
+        {
+          "strike": 592.02,
+          "gex": -0.009
+        },
+        {
+          "strike": 598.0,
+          "gex": -0.0004
+        },
+        {
+          "strike": 603.98,
+          "gex": 0.0116
+        },
+        {
+          "strike": 609.96,
+          "gex": -0.0004
+        },
+        {
+          "strike": 615.94,
+          "gex": -0.0004
+        },
+        {
+          "strike": 621.92,
+          "gex": -0.0004
+        }
+      ]
+    },
+    "TSLA": {
+      "spot": 248.0,
+      "net_gex": -221414.40000000177,
+      "net_gex_billions": -0.0,
+      "regime": "NEGATIVE",
+      "gamma_flip": 248.0,
+      "call_wall": 260.399,
+      "put_wall": 235.6,
+      "peak_gex_strike": 260.399,
+      "zero_dte_expiry": "2026-06-26",
+      "net_gex_0dte_billions": -0.0,
+      "flip_0dte": 248.0,
+      "call_wall_0dte": 260.399,
+      "put_wall_0dte": 235.6,
+      "vol_confidence": "live",
+      "total_volume": 119000,
+      "net_gex_vol_billions": 0.0,
+      "regime_vol": "POSITIVE",
+      "flip_vol": 247.69,
+      "call_wall_vol": 247.999,
+      "put_wall_vol": 243.039,
+      "profile_vol": [
+        {
+          "strike": 235.6,
+          "gex": 0.0
+        },
+        {
+          "strike": 238.08,
+          "gex": 0.0
+        },
+        {
+          "strike": 240.56,
+          "gex": 0.0
+        },
+        {
+          "strike": 243.04,
+          "gex": -0.0026
+        },
+        {
+          "strike": 245.52,
+          "gex": 0.0
+        },
+        {
+          "strike": 248.0,
+          "gex": 0.003
+        },
+        {
+          "strike": 250.48,
+          "gex": 0.0
+        },
+        {
+          "strike": 252.96,
+          "gex": 0.0
+        },
+        {
+          "strike": 255.44,
+          "gex": 0.0
+        },
+        {
+          "strike": 257.92,
+          "gex": 0.0
+        },
+        {
+          "strike": 260.4,
+          "gex": 0.0
+        }
+      ],
+      "expiries_used": [
+        "2026-06-26"
+      ],
+      "profile": [
+        {
+          "strike": 235.6,
+          "gex": -0.0015
+        },
+        {
+          "strike": 238.08,
+          "gex": -0.0001
+        },
+        {
+          "strike": 240.56,
+          "gex": -0.0001
+        },
+        {
+          "strike": 243.04,
+          "gex": -0.0001
+        },
+        {
+          "strike": 245.52,
+          "gex": -0.0001
+        },
+        {
+          "strike": 248.0,
+          "gex": -0.0001
+        },
+        {
+          "strike": 250.48,
+          "gex": -0.0001
+        },
+        {
+          "strike": 252.96,
+          "gex": -0.0001
+        },
+        {
+          "strike": 255.44,
+          "gex": -0.0001
+        },
+        {
+          "strike": 257.92,
+          "gex": -0.0001
+        },
+        {
+          "strike": 260.4,
+          "gex": 0.002
+        }
+      ]
+    },
+    "NVDA": {
+      "spot": 132.0,
+      "net_gex": -648172.8000000004,
+      "net_gex_billions": -0.001,
+      "regime": "NEGATIVE",
+      "gamma_flip": 132.0,
+      "call_wall": null,
+      "put_wall": 128.039,
+      "peak_gex_strike": 128.039,
+      "zero_dte_expiry": "2026-06-26",
+      "net_gex_0dte_billions": -0.001,
+      "flip_0dte": 132.0,
+      "call_wall_0dte": null,
+      "put_wall_0dte": 128.039,
+      "vol_confidence": "live",
+      "total_volume": 84000,
+      "net_gex_vol_billions": 0.001,
+      "regime_vol": "POSITIVE",
+      "flip_vol": 132.0,
+      "call_wall_vol": 131.999,
+      "put_wall_vol": null,
+      "profile_vol": [
+        {
+          "strike": 125.4,
+          "gex": 0.0
+        },
+        {
+          "strike": 126.72,
+          "gex": 0.0
+        },
+        {
+          "strike": 128.04,
+          "gex": 0.0
+        },
+        {
+          "strike": 129.36,
+          "gex": 0.0
+        },
+        {
+          "strike": 130.68,
+          "gex": 0.0
+        },
+        {
+          "strike": 132.0,
+          "gex": 0.0008
+        },
+        {
+          "strike": 133.32,
+          "gex": 0.0
+        },
+        {
+          "strike": 134.64,
+          "gex": 0.0
+        },
+        {
+          "strike": 135.96,
+          "gex": 0.0
+        },
+        {
+          "strike": 137.28,
+          "gex": 0.0
+        },
+        {
+          "strike": 138.6,
+          "gex": 0.0
+        }
+      ],
+      "expiries_used": [
+        "2026-06-26"
+      ],
+      "profile": [
+        {
+          "strike": 125.4,
+          "gex": -0.0
+        },
+        {
+          "strike": 126.72,
+          "gex": -0.0
+        },
+        {
+          "strike": 128.04,
+          "gex": -0.0004
+        },
+        {
+          "strike": 129.36,
+          "gex": -0.0
+        },
+        {
+          "strike": 130.68,
+          "gex": -0.0
+        },
+        {
+          "strike": 132.0,
+          "gex": -0.0
+        },
+        {
+          "strike": 133.32,
+          "gex": -0.0
+        },
+        {
+          "strike": 134.64,
+          "gex": -0.0
+        },
+        {
+          "strike": 135.96,
+          "gex": -0.0
+        },
+        {
+          "strike": 137.28,
+          "gex": -0.0
+        },
+        {
+          "strike": 138.6,
+          "gex": -0.0
+        }
+      ]
+    }
+  }
+}
