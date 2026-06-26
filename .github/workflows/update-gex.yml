@@ -1,0 +1,51 @@
+name: update-gex
+
+# Runs the GEX calculator and commits gex_data.json back to the repo.
+# Schedule is in UTC. CT is UTC-5 (CDT) right now.
+#
+#   - Pre-market refresh:  13:00 UTC = 8:00 AM CT  (uses T-1 OI, ready before open)
+#   - Mid-day refresh:     17:30 UTC = 12:30 PM CT
+#   - Post-close refresh:  21:30 UTC = 4:30 PM CT  (settles into next-day structure)
+#
+# You can also trigger it by hand from the Actions tab, optionally for a
+# single ad-hoc ticker.
+
+on:
+  schedule:
+    - cron: "0 13 * * 1-5"
+    - cron: "30 17 * * 1-5"
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: "Optional single ticker to add for this run (e.g. AMD or _RUT)"
+        required: false
+        default: ""
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Run GEX calculator
+        env:
+          ADHOC_TICKER: ${{ github.event.inputs.ticker }}
+        run: python calculate_gex.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add gex_data.json
+          git diff --quiet --cached || git commit -m "Update GEX data $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
