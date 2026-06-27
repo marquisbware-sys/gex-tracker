@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,6 +153,8 @@
     <a href="../seasonality-tracker/dashboard.html">Seasonality</a>
     <a href="../ninja-system/system.html">System</a>
     <a href="../ninja-system/checklist.html">Checklist</a>
+    <a href="../briefing/briefing.html">Briefing</a>
+    <a href="../cot-tracker/dashboard.html">COT</a>
   </nav>
   <div class="meta" id="meta">loading…</div>
 </header>
@@ -173,7 +176,7 @@
       <option value="oi">view: OI (T-1 structure)</option>
       <option value="vol">view: Volume (live proxy)</option>
     </select>
-    <button id="refresh">↻ refresh</button>
+    <button id="refresh" title="Reloads data and opens the Actions page to run the workflow">↻ refresh + run</button>
   </div>
 </div>
 
@@ -345,7 +348,12 @@
   document.getElementById('filter').addEventListener('input',render);
   document.getElementById('sort').addEventListener('change',render);
   document.getElementById('viewmode').addEventListener('change',render);
-  document.getElementById('refresh').addEventListener('click',load);
+  document.getElementById('refresh').addEventListener('click',()=>{
+    load();
+    // A public page can't securely trigger a workflow (needs a token).
+    // So we open the Actions run page in a new tab for a one-click manual run.
+    window.open('https://github.com/marquisbware-sys/gex-tracker/actions/workflows/update-gex.yml','_blank');
+  });
   load();
   setInterval(load,300000); // refresh every 5 min
 </script>
