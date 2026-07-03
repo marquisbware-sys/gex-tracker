@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-03 18:47:40 UTC",
+  "generated_utc": "2026-07-03 22:30:48 UTC",
   "model": "naive OI-based, long calls / short puts, 4 nearest expiries",
   "data_note": "CBOE open interest is T-1. Structure, not a live signal.",
   "errors": [],
